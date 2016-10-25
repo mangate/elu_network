@@ -21,7 +21,9 @@ With this system you should still reach an accuracy of about 64% (comparing to 7
 
 3) set `$PYLEARN2_DATA_PATH` to `<some_dir>` from step 2
 
-4) Run once: `python process_cifar_100_data.py`
+4) Run once: `python process_cifar_100_data.py` to whiten and do ZCA on the data
+
+5) On `open_cifar_100_data.py` change `ROOT_FOLDER` to the folder where the whitenend (and ZCA'd) data was saved
 
 5) Now you can use the model by `python elu_network.py`
 
