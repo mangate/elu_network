@@ -8,6 +8,11 @@ With this system you should still reach an accuracy of about 64% (comparing to 7
 
 ## Requirements
 Code is written in python (2.7) and requires:
-- TensorFlow (0.7 or above), 
-- Numpy, 
+- TensorFlow (0.7 or above)
+- Numpy 
 - MatplotLib
+- PyLearn2
+- cPickle
+
+## Usage
+1) Download CIFAR-100 data from here: 
