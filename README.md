@@ -25,7 +25,7 @@ With this system you should still reach an accuracy of about 64% (comparing to 7
 
 5) On `open_cifar_100_data.py` change `ROOT_FOLDER` to the folder where the whitenend (and ZCA'd) data was saved
 
-5) Now you can use the model by `python elu_network.py`
+6) Now you can use the model by `python elu_network.py`
 
 ## References
 [Fast and Accurate Deep Network Learning By Exponential Linear Units (ELU's)](https://arxiv.org/pdf/1511.07289v5.pdf)
