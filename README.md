@@ -27,4 +27,5 @@ With this system you should still reach an accuracy of about 64% (comparing to 7
 
 ## References
 [Fast and Accurate Deep Network Learning By Exponential Linear Units (ELU's)](https://arxiv.org/pdf/1511.07289v5.pdf)
+
 [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf)
