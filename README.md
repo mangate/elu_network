@@ -16,4 +16,11 @@ Code is written in python (2.7) and requires:
 
 ## Usage
 1) Download CIFAR-100 data from [here](https://www.cs.toronto.edu/~kriz/cifar.html)
+
 2) Data files (meta,test,train,and file.txt) should be placed under `<some_dir>/cifar-100/cifar-100-python/`
+
+3) set `$PYLEARN2_DATA_PATH` to `<some_dir>` from step 2
+
+4) Run once: `python process_cifar_100_data.py`
+
+5) Now you can use the model by `python elu_network.py`
