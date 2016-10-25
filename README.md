@@ -15,4 +15,5 @@ Code is written in python (2.7) and requires:
 - cPickle
 
 ## Usage
-1) Download CIFAR-100 data from here: 
+1) Download CIFAR-100 data from [here](https://www.cs.toronto.edu/~kriz/cifar.html)
+2) Data files (meta,test,train,and file.txt) should be placed under `<some_dir>/cifar-100/cifar-100-python/`
