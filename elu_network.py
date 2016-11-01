@@ -229,7 +229,7 @@ with graph.as_default():
     #Loss
     #======
     #labels = tf.cast(y_, tf.int64)
-    results,_ = model(x)
+    results = model(x)
     cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
     results, y_, name='cross_entropy_per_example')
     cross_entropy_mean = tf.reduce_mean(cross_entropy, name='cross_entropy')
@@ -272,11 +272,8 @@ with tf.Session(graph=graph) as sess:
       offset = (step * batch_size) % (train_labels.shape[0] - batch_size)
       batch_data = train_images[offset:(offset + batch_size), :, :, :]
       batch_labels = train_labels[offset:(offset + batch_size), :]
-      #Creating the pairwise data
-      x1_pair_in,x2_pair_in,y_pair_in = create_pairwise_batch(train_images,train_labels,indices_list,batch_size)
       #Training
       feed_dict = {x: batch_data, y_ : batch_labels, tf_learning_rate: learning_rate,
-                   x1_pair: x1_pair_in, x2_pair: x2_pair_in, y_pair: y_pair_in,
                    stack1_prob_input: 1.0, stack2_prob_input: 0.9, stack3_prob_input: 0.8,
                    stack4_prob_input: 0.7, stack5_prob_input: 0.6, stack6_prob_input: 0.5, stack7_prob_input: 1.0}
       _, loss_out, predictions = sess.run([optimizer, total_loss, tf_prediction], feed_dict=feed_dict)
